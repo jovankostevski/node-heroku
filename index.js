@@ -6,7 +6,7 @@ api.get("/", (req, res) => {
     res.send('Hello World');
 });
 
-api.listen(process.env.port || 8080, err => {
+api.listen(process.env.PORT || 8080, err => {
     if(err) {
        return console.error(err);
     }
